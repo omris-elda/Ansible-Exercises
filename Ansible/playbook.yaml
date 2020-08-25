@@ -1,0 +1,10 @@
+- hosts: docker
+  become: yes
+  roles:
+  - docker
+
+
+- hosts: nginx
+  become: yes
+  roles:
+  - nginx
